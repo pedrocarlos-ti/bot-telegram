@@ -11,6 +11,7 @@
 	"author": "Pedro S.",
 	"license": "MIT",
 	"dependencies": {
+		"axios": "^0.18.0",
 		"telegraf": "^3.27.1"
 	},
 	"devDependencies": {
