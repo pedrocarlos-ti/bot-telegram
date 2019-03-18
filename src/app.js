@@ -16,8 +16,13 @@ bot.start(ctx => {
 });
 
 // Evento ao digitar algum texto
-bot.on("text", (ctx, next) => {
-	ctx.reply("Mid 1");
+bot.on("text", async (ctx, next) => {
+	ctx.reply("Novo 👍");
+	await ctx.replyWithPhoto({
+		url: "https://steembottracker.com/img/bot_logo.png"
+	});
+	await ctx.replyWithLocation(29.973008, 31.1303068);
+	await ctx.replyWithVideo("http://files.cod3r.com.br/cod3r.mp4");
 	next();
 });
 
@@ -49,6 +54,7 @@ bot.on("photo", ctx => {
 	ctx.reply(`Foto recebida.`);
 });
 
+// Evento que envia um Sticker ao receber uma mensagem
 bot.on("sticker", ctx => {
 	const sticker = ctx.update.message.sticker;
 	console.log(sticker);
