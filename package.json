@@ -1,0 +1,19 @@
+{
+	"name": "isa-bot-v2",
+	"version": "1.0.0",
+	"description": "Bot System for Talk with users",
+	"main": "app.js",
+	"scripts": {
+		"start": "node src/app.js",
+		"dev": "nodemon src/app.js"
+	},
+	"repository": "git@github.com:pedrocarlos-ti/bot-telegram.git",
+	"author": "Pedro S.",
+	"license": "MIT",
+	"dependencies": {
+		"telegraf": "^3.27.1"
+	},
+	"devDependencies": {
+		"nodemon": "^1.18.10"
+	}
+}
