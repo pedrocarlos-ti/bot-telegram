@@ -1,5 +1,4 @@
 
-24 lines (20 sloc) 479 Bytes
 // middleware pattern (chain of responsibility)
 const exec = (ctx, ...middlewares) => {
     const run = index => {

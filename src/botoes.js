@@ -29,6 +29,7 @@ bot.start(async ctx => {
 });
 
 bot.action(/add (\d+)/, ctx => {
+	console.log(ctx.match);
 	contagem += parseInt(ctx.match[1]);
 	ctx.reply(`A contagem atual está em ${contagem}`, botoes);
 });
